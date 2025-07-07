@@ -33,3 +33,5 @@ jobs:
 
     - name: 🔎 Testleri Çalıştır
       run: pytest tests/
+      env:
+       PYTHONPATH: .
