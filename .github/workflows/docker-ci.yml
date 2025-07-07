@@ -30,3 +30,6 @@ jobs:
 
     - name: 🐳 Docker İmajı Oluşturuluyor
       run: docker build -t spam-detector-api .
+
+    - name: 🔎 Testleri Çalıştır
+      run: pytest tests/
