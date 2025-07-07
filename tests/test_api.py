@@ -4,7 +4,7 @@ from src.api import app
 client = TestClient(app)
 
 def test_predict_spam():
-    response = client.post("/predict", json={"text": "Congratulations! You won a prize"})
+    response = client.post("/predict", json={"text": "Win free money now!"})
     assert response.status_code == 200
     assert response.json()["prediction"] == "spam"
 
